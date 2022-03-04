@@ -1,8 +1,11 @@
 import React from "react";
 
 export default function Informations() {
-  return (
-    <div className="container py-3">
+    let myStyle = {
+        minHeight: "100vh"
+      }
+    return (
+    <div className="container py-3" style={myStyle}>
       <div className="accordion" id="accordionExample">
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingOne">
@@ -51,7 +54,9 @@ export default function Informations() {
             data-bs-parent="#accordionExample"
           >
             <div className="accordion-body">
-              Student need to signup through the link given above,
+              Student need to signup through the link given above, then file your complaint
+              related to the department. If you are unable to choose the related department,
+              please contact the respective authorities.
             </div>
           </div>
         </div>
@@ -65,7 +70,7 @@ export default function Informations() {
               aria-expanded="false"
               aria-controls="collapseThree"
             >
-              Accordion Item #3
+              How does it helps staff?
             </button>
           </h2>
           <div
@@ -75,14 +80,7 @@ export default function Informations() {
             data-bs-parent="#accordionExample"
           >
             <div className="accordion-body">
-              <strong>This is the third item's accordion body.</strong> It is
-              hidden by default, until the collapse plugin adds the appropriate
-              classes that we use to style each element. These classes control
-              the overall appearance, as well as the showing and hiding via CSS
-              transitions. You can modify any of this with custom CSS or
-              overriding our default variables. It's also worth noting that just
-              about any HTML can go within the <code>.accordion-body</code>,
-              though the transition does limit overflow.
+              Staff can watch out for the dashboard and Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum debitis ut culpa exercitationem quo quas ea eaque illum eum beatae! Inventore deleniti omnis dicta debitis cum modi deserunt aperiam reprehenderit!
             </div>
           </div>
         </div>
