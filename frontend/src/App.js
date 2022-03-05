@@ -1,22 +1,29 @@
-import './App.css';
-import DashBoard from './MyComponents/DashBoard';
-import Footer from './MyComponents/Footer';
+import "./App.css";
+import Footer from "./MyComponents/Footer";
 import Header from "./MyComponents/Header";
-import ImageSlider from './MyComponents/ImageSlider';
-import Informations from './MyComponents/Informations';
-import { SliderData } from './MyComponents/SliderData';
-import Login from './MyComponents/Login'
+import Login from "./MyComponents/Login";
+import Home from "./MyComponents/Home";
+import Signup from "./MyComponents/Signup";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 function App() {
   return (
-     <>
-     <Login/>
-     {/* <Header/>
-     <DashBoard/>
-     <ImageSlider slides={SliderData}/>
-     <Informations/>
-     <Footer/> */}
-     </>
+    <>
+      
+      <Header />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} ></Route>
+          <Route path="/login" element={<Login />} ></Route>
+          <Route path="/signup" element={<Signup />} ></Route>
+        </Routes>
+      </BrowserRouter>
+      <Footer />
+    </>
   );
 }
 

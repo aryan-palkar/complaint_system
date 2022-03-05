@@ -20,8 +20,8 @@ function Login() {
           <div>
             <img src={email} alt="email" className="email" />
             <input
-              value={username}
-              onnChange={(e) => {
+              // value={username}
+              onChange={(e) => {
                 setUsername(e.target.value);
               }}
               type="text"
@@ -32,7 +32,7 @@ function Login() {
           <div>
             <img src={pass} alt="pass" className="email" />
             <input
-              value={password}
+              // value={password}
               onChange={(e) => {
                 setPassword(e.target.value);
               }}
